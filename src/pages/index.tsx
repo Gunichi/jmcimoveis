@@ -7,16 +7,20 @@ import { FaWhatsapp, FaInstagram } from 'react-icons/fa'
 import SmallWithLogoLeft from '../Components/Footer'
 import Nav from '../Components/Navbar'
 
+import style from '../styles/Home.module.css'
+
 const Card = () => {
   return (
     <>
     <Nav />
-      <Flex 
-        align="center" 
-        justify="center" 
-        bg='black' 
-        height={'100%'}
-      >
+
+    <Flex
+      align="center" 
+      justify="center" 
+      bg='black' 
+      h="100vh"
+    >
+      
         
         <VStack>
           <Box
@@ -42,8 +46,6 @@ const Card = () => {
             p={4}
             w="300px"
             h="200px"
-            boxShadow="lg"
-            rounded="lg"
             textAlign="center"
           >
             <Button
@@ -52,7 +54,7 @@ const Card = () => {
               color='black'
               _hover={{ bg: '#f0c518', color: 'black' }}
               mt={4}
-              onClick={() => window.open('tel:34997761610')}
+              onClick={() => window.open('tel:3499776-1610')}
             > 
               Ligar para mim 
             </Button>
@@ -78,12 +80,9 @@ const Card = () => {
             </Button>
           </Box>
         </VStack>
-      </Flex>
-      <SmallWithLogoLeft />
-        
-      
+    </Flex>
+    <SmallWithLogoLeft />
     </>
-
   )
 }
 
